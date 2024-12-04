@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navigation from "./components/navigation";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,7 +29,14 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header className="text-center mb-8 bg-black/[.05] dark:bg-white/[.05] ">
+          <p>Welcome to Next.js</p>
+          <Navigation />
+        </header>
         {children}
+        <footer className="text-center mt-8 ">
+          <p>My Footer</p>
+        </footer>
       </body>
     </html>
   );
