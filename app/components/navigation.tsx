@@ -20,9 +20,9 @@ export default function Navigation() {
       </Link>
       <Link
         href="/users-client"
-        className={pathname === "/products/2" ? "underline" : ""}
+        className={pathname === "/users-client" ? "underline" : ""}
       >
-        Product 2
+        Users (client)
       </Link>
     </nav>
   );
