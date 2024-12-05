@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { SignInButton, UserButton } from "@clerk/clerk-react";
 
 export default function Navigation() {
   const pathname = usePathname();
@@ -24,6 +25,8 @@ export default function Navigation() {
       >
         Users (client)
       </Link>
+      <SignInButton mode="modal" />
+      {/* <UserButton></UserButton> */}
     </nav>
   );
 }
