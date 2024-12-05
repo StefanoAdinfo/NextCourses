@@ -18,6 +18,12 @@ export default function Navigation() {
       >
         Product 1
       </Link>
+      <Link
+        href="/users-client"
+        className={pathname === "/products/2" ? "underline" : ""}
+      >
+        Product 2
+      </Link>
     </nav>
   );
 }
